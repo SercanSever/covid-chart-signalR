@@ -2,3 +2,12 @@
     ViewData["Title"] = "Home Page";
     Layout = "_Layout";
 }
+
+@section Scripts{
+<script src="~/lib/browser/signalr.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(() => {
+        var connection = new signalR.HubConnectionBuilder().withAutomaticReconnect().withUrl("https://localhost:7079//covid-statistics").build();
+    })
+</script>
+}
