@@ -1,0 +1,5 @@
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.csproj.AssemblyReference.cache
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.AssemblyInfoInputs.cache
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.AssemblyInfo.cs
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.csproj.CoreCompileInputs.cache
