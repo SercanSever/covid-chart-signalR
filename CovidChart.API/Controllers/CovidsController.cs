@@ -34,8 +34,8 @@ namespace CovidChart.API.Controllers
       public async Task<IActionResult> SaveCovidAsync(Covid covid)
       {
          await _covidService.SaveCovidAsync(covid);
-         IQueryable<Covid> covidList = _covidService.GetCovidList();
-         return Ok(covidList);
+         // IQueryable<Covid> covidList = _covidService.GetCovidList();
+         return Ok(_covidService.GetCovidListForChart());
       }
    }
 }

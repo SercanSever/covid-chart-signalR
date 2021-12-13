@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using CovidChart.Service.Abstract;
 using CovidChart.Service.Models;
@@ -27,7 +28,7 @@ namespace CovidChart.Service.Concrete
       {
          await _context.Covids.AddAsync(covid);
          await _context.SaveChangesAsync();
-         await _hubContext.Clients.All.SendAsync("ReceiveCvidList", "data");
+         await _hubContext.Clients.All.SendAsync("ReceiveCvidList", GetCovidListForChart());
       }
       public List<Chart> GetCovidListForChart()
       {
@@ -35,8 +36,32 @@ namespace CovidChart.Service.Concrete
          using (var command = _context.Database.GetDbConnection().CreateCommand())
          {
             command.CommandText = "select Tarih,[1],[2],[3],[4],[5] from (select [City],[Count],Cast([CovidDate] as date) as Tarih from Covids) as CovidTable pivot (sum([Count]) for City in([1],[2],[3],[4],[5])) as PivotTable order by tarih asc";
+
+            command.CommandType = System.Data.CommandType.Text;
+            _context.Database.OpenConnection();
+            using (var reader = command.ExecuteReader())
+            {
+               while (reader.Read())
+               {
+                  Chart chart = new Chart();
+                  chart.CovidDate = reader.GetDateTime(0).ToShortDateString();
+                  Enumerable.Range(1, 5).ToList().ForEach(x =>
+                  {
+                     if (DBNull.Value.Equals(reader[x]))
+                     {
+                        chart.Counts.Add(0);
+                     }
+                     else
+                     {
+                        chart.Counts.Add(reader.GetInt32(x));
+                     }
+                  });
+                  covidChart.Add(chart);
+               }
+            }
+            _context.Database.CloseConnection();
+            return covidChart;
          }
       }
-
    }
 }
