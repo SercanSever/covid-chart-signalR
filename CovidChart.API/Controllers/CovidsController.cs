@@ -15,8 +15,19 @@ namespace CovidChart.API.Controllers
          _covidService = covidService;
       }
 
-      public IActionResult GetCovidList()
+      [HttpGet]
+      public async Task<IActionResult> InitializeCovid()
       {
+         Random random = new Random();
+         Enumerable.Range(1, 10).ToList().ForEach(x =>
+         {
+            foreach (ECity city in Enum.GetValues(typeof(ECity)))
+            {
+               var newCovid = new Covid { City = city, Count = random.Next(100, 1000), CovidDate = DateTime.Now.AddDays(x) };
+               _covidService.SaveCovidAsync(newCovid).Wait();
+               System.Threading.Thread.Sleep(1000);
+            };
+         });
          return Ok();
       }
       [HttpPost]
