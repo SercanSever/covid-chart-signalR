@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\CovidChart.Web.csproj": {}
+    "C:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\CovidChart.Web.csproj": {}
   },
   "projects": {
-    "c:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\CovidChart.Web.csproj": {
+    "C:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\CovidChart.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\CovidChart.Web.csproj",
+        "projectUniqueName": "C:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\CovidChart.Web.csproj",
         "projectName": "CovidChart.Web",
-        "projectPath": "c:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\CovidChart.Web.csproj",
+        "projectPath": "C:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\CovidChart.Web.csproj",
         "packagesPath": "C:\\Users\\PROGRAMCI\\.nuget\\packages\\",
-        "outputPath": "c:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\obj\\",
+        "outputPath": "C:\\Projects\\Covid19Chart-SignalR\\CovidChart.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -7,7 +7,17 @@
 <script src="~/lib/browser/signalr.min.js"></script>
 <script type="text/javascript">
     $(document).ready(() => {
-        var connection = new signalR.HubConnectionBuilder().withAutomaticReconnect().withUrl("https://localhost:7079//covid-statistics").build();
+        var connection = new signalR.HubConnectionBuilder().withUrl("https://localhost:7079/covid-statistics").build();
+
+        connection.start().then(() => {
+            connection.invoke("GetCovidList");
+        }).catch((err) => { console.log(err); });
+
+
+        connection.on("ReceiveCovidList", (covidList) => {
+            console.log(covidList);
+        });
+
     })
 </script>
 }

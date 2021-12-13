@@ -24,3 +24,8 @@ C:\Projects\Covid19Chart-SignalR\CovidChart.Web\obj\Debug\net6.0\CovidChart.Web.
 C:\Projects\Covid19Chart-SignalR\CovidChart.Web\obj\Debug\net6.0\ref\CovidChart.Web.dll
 C:\Projects\Covid19Chart-SignalR\CovidChart.Web\obj\Debug\net6.0\CovidChart.Web.pdb
 C:\Projects\Covid19Chart-SignalR\CovidChart.Web\obj\Debug\net6.0\CovidChart.Web.genruntimeconfig.cache
+C:\Projects\Covid19Chart-SignalR\CovidChart.Web\bin\Debug\net6.0\package-lock.json
+C:\Projects\Covid19Chart-SignalR\CovidChart.Web\bin\Debug\net6.0\package.json
+C:\Projects\Covid19Chart-SignalR\CovidChart.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Projects\Covid19Chart-SignalR\CovidChart.Web\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Projects\Covid19Chart-SignalR\CovidChart.Web\obj\Debug\net6.0\CovidChart.Web.csproj.CopyComplete
