@@ -3,3 +3,12 @@ C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.
 C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.AssemblyInfoInputs.cache
 C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.AssemblyInfo.cs
 C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.csproj.CoreCompileInputs.cache
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\bin\Debug\net6.0\CovidChart.Service.deps.json
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\bin\Debug\net6.0\CovidChart.Service.runtimeconfig.json
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\bin\Debug\net6.0\CovidChart.Service.dll
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\bin\Debug\net6.0\ref\CovidChart.Service.dll
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\bin\Debug\net6.0\CovidChart.Service.pdb
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.dll
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\ref\CovidChart.Service.dll
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.pdb
+C:\Projects\Covid19Chart-SignalR\CovidChart.Service\obj\Debug\net6.0\CovidChart.Service.genruntimeconfig.cache

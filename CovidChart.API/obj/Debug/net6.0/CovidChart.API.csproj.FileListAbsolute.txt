@@ -58,3 +58,5 @@ C:\Projects\Covid19Chart-SignalR\CovidChart.API\obj\Debug\net6.0\CovidChart.API.
 C:\Projects\Covid19Chart-SignalR\CovidChart.API\obj\Debug\net6.0\CovidChart.API.genruntimeconfig.cache
 C:\Projects\Covid19Chart-SignalR\CovidChart.API\bin\Debug\net6.0\Humanizer.dll
 C:\Projects\Covid19Chart-SignalR\CovidChart.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projects\Covid19Chart-SignalR\CovidChart.API\bin\Debug\net6.0\CovidChart.Service.dll
+C:\Projects\Covid19Chart-SignalR\CovidChart.API\bin\Debug\net6.0\CovidChart.Service.pdb

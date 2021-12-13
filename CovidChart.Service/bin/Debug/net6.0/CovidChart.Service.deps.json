@@ -6,16 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "CovidChart.API/1.0.0": {
+      "CovidChart.Service/1.0.0": {
         "dependencies": {
-          "CovidChart.Service": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
-          "CovidChart.API.dll": {}
+          "CovidChart.Service.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -470,22 +469,11 @@
             "fileVersion": "4.700.19.56404"
           }
         }
-      },
-      "CovidChart.Service/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.0",
-          "Microsoft.EntityFrameworkCore.Design": "6.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
-          "Swashbuckle.AspNetCore": "6.2.3"
-        },
-        "runtime": {
-          "CovidChart.Service.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "CovidChart.API/1.0.0": {
+    "CovidChart.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -825,11 +813,6 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
-    },
-    "CovidChart.Service/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
