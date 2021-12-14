@@ -4,7 +4,6 @@
 }
 
 
-<div id="curve_chart" style="width: 900px; height: 500px"></div>
 
 @section Scripts{
 <script src="~/lib/browser/signalr.min.js"></script>
@@ -19,35 +18,35 @@
 
         connection.start().then(() => {
             connection.invoke("GetCovidList");
-        }).catch((err) => { console.log(err); });
+        }).catch((err) => {
+            console.log(err);
+        });
 
 
         connection.on("ReceiveCovidList", (covidList) => {
-            covidChartList = covidChartList.slice(0,1);
+            covidChartList = covidChartList.splice(0, 1);
             covidList.forEach((item) => {
                 covidChartList.push([item.covidDate, item.counts[0], item.counts[1], item.counts[2], item.counts[3], item.counts[4]])
             })
             google.charts.load('current', { 'packages': ['corechart'] });
             google.charts.setOnLoadCallback(drawChart);
-        });
-
-
-
+        })
 
 
         function drawChart() {
-            var data = google.visualization.arrayToDataTable(covidChartList);
+                var data = google.visualization.arrayToDataTable(covidChartList);
+                var options = {
+                    title: 'Covid19 Chart',
+                    curveType: 'none',
+                    legend: { position: 'bottom' }
+                };
+                var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-            var options = {
-                title: 'Covid19 Chart',
-                curveType: 'none',
-                legend: { position: 'bottom' }
-            };
-
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-            chart.draw(data, options);
-        }
+                chart.draw(data, options);
+            }
     })
 </script>
 }
+
+
+<div id="curve_chart" style="width: 900px; height: 500px"></div>

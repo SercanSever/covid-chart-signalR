@@ -28,7 +28,7 @@ namespace CovidChart.Service.Concrete
       {
          await _context.Covids.AddAsync(covid);
          await _context.SaveChangesAsync();
-         await _hubContext.Clients.All.SendAsync("ReceiveCvidList", GetCovidListForChart());
+         await _hubContext.Clients.All.SendAsync("ReceiveCovidList", GetCovidListForChart());
       }
       public List<Chart> GetCovidListForChart()
       {
